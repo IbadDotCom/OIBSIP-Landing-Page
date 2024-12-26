@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .main {
+            width: 90%;
+            margin: auto;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 15px;
+            margin: 10px;
+            min-width: 250px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            background: #f9f9f9;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Landing Page</h1>
+    </header>
+
+    <section class="main">
+        <section>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <p>We provide a wide range of services to meet your needs. Whether you're looking for technical expertise or
+                creative solutions, we have you covered.</p>
+        </section>
+
+        <div class="container">
+            <div class="column">
+                <h2>Bronze</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet augue at nunc euismod
+                    interdum.</p>
+            </div>
+            <div class="column">
+                <h2>Gold</h2>
+                <p>Nulla facilisi. Aenean congue ex vel mi fringilla, sit amet elementum orci lacinia.</p>
+            </div>
+            <div class="column">
+                <h2>Diamond</h2>
+                <p>Maecenas nec efficitur erat, ac luctus nisi. Pellentesque ac tortor a turpis condimentum vestibulum.
+                </p>
+            </div>
+        </div>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have questions? Get in touch with us via email or phone. We're here to help you!</p>
+        </section>
+    </section>
+    <footer>
+        <p>&copy; 2024 Muhammad Ibad</p>
+    </footer>
+
+</body>
+
+</html>
